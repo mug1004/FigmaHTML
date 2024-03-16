@@ -8,11 +8,14 @@
 </head>
 <style>
   html, body {
-    width: 100%;
-    height: 100%;
+    width: 1467px;
+    height: 1348px;
     margin: 0;
     padding: 0;
     position: relative;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-sizing: border-box;
   }
   * {
     margin: 0;
@@ -22,28 +25,41 @@
     width: 100%;
     height: 100%;
     display: flex;
+    font-family: 'Poppins', sans-serif;
   }
   .left-side {
-    width: 333px;
+    width: 327px;
     display: grid;
     gap: 20px;
-    font-family: 'Poppins', sans-serif;
+    padding: 28px;
   }
   .logo {
     top: 93px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    padding-left: 23px;
+    padding-top: 33px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
   }
   .logo-left {
     color: #161616;
+  }
+  h1 {
+    font-size: 47px;
+  }
+  h2 {
+    font-size: 30px;
   }
   .logo-right {
     color: #00A2A1;
     border: 3px solid #00A2A1;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    box-sizing: border-box;
+    width: 110px;
+    height: 108px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,27 +67,39 @@
   .classify {
     width: 229px;
     display: grid;
-    gap: 10px;
-    padding-left: 51px;
+    gap: 19px;
+    padding-left: 23px;
+    padding-top: 89px;
   }
   .item1 {
     height: 59px;
     background-color: #00A2A1;
     border: 1px solid #00A2A1;
     border-radius: 15px;
-    font-size: 38px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
     color: white;
-    padding-left: 10px;
     display: flex;
     align-items: center;
+    text-decoration: none;
+  }
+  .item-icon {
+    width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .item {
     height: 59px;
-    padding-left: 10px;
     color: #969696;
-    font-size: 38px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
     display: flex;
     align-items: center;
+    text-decoration: none;
   }
   .text {
     padding: 10px;
@@ -250,38 +278,52 @@
   <div class="main-wrapper">
     <div class="left-side">
       <div class="logo">
-        <h1 class="logo-left">Public</h1> 
-        <h1 class="logo-right">space</h1>
+        <p class="logo-left">Public</p> 
+        <p class="logo-right">space</p>
       </div>
       <nav class="classify">
-          <div class="item1">
-            <img src="home.svg" />
-            <p class="text">Home</p>
-          </div>
-          <div class="item">
-            <img src="time.svg" />
-            <p class="text">Archieve</p>
+          <a href="" class="item1">
+            <div class="item-icon">
+              <img src="home.svg" />
             </div>
-          <div class="item">
-            <img src="time.svg" />
-            <p class="text">Saved</p>
-          </div>
-          <div class="item">
-            <img src="time.svg" />
-            <p class="text">Taggs</p>
-          </div>
-          <div class="item">
-            <img src="time.svg" />
-            <p class="text">Groups</p>
-          </div>
-          <div class="item">
-            <img src="time.svg" />
-            <p class="text">Message</p>
-          </div>
-          <div class="item">
-            <img src="time.svg" />
-            <p class="text">Setting</p>
-          </div>
+            <div>Home</div>
+          </a>
+          <a href="" class="item">
+            <div class="item-icon">
+              <img src="archive.svg" />
+            </div>
+            <div>Archive</div>
+          </a>
+          <a href="" class="item">
+            <div class="item-icon">
+              <img src="saved.svg" />
+            </div>
+            <div>Saved</div>
+          </a>
+          <a href="" class="item">
+            <div class="item-icon">
+              <img src="Tagged.svg" />
+            </div>
+            <div>Tagged</div>
+          </a>
+          <a href="" class="item">
+            <div class="item-icon">
+              <img src="groups.svg" />
+            </div>
+            <div>Groups</div>
+          </a>
+          <a href="" class="item">
+            <div class="item-icon">
+              <img src="message.svg" />
+            </div>
+            <div>Message</div>
+          </a>
+          <a href="" class="item">
+            <div class="item-icon">
+              <img src="setting.svg" />
+            </div>
+            <div>Setting</div>
+          </a>
       </nav>
       <div class="chat">
         <div class="chat-head">
